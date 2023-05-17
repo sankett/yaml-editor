@@ -35,7 +35,7 @@ export default function Yaml({comp}) {
     getUsers(); // run it, run it
   }, [selectedValue]);
 
-  useEffect(() => {
+  /*useEffect(() => {
     try {
       const data = yaml.load(yamldata, "utf8").component;
 
@@ -43,7 +43,7 @@ export default function Yaml({comp}) {
     } catch (ex) {
       console.log("error:", ex);
     }
-  }, [yamldata]);
+  }, [yamldata]);*/
 
   const options = {
     selectOnLineNumbers: true,
@@ -75,9 +75,9 @@ export default function Yaml({comp}) {
     return (
       <div style={{ float: "left", width: "50%", border: "0px solid maroon" }} className="border border-lime-300 shadow rounded-md p-4 ">
             <div className="animate-pulse flex space-x-4">
-                <div className="rounded-full bg-slate-200 h-10 w-10"></div>
+                <div className="rounded-full bg-slate-200 h-10 w-10 "></div>
                 <div className="flex-1 space-y-6 py-1">
-                <div className="h-10 bg-slate-200 rounded"></div>
+                <div className="h-10 bg-slate-200 rounded text-lg pl-2"> Loading...</div>
                 <div className="space-y-3">
                     <div className="grid grid-cols-3 gap-4">
                     <div className="h-10 bg-slate-200 rounded col-span-2"></div>
