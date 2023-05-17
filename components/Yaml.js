@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react";
 import dynamic from 'next/dynamic';
 import Radio from "./Radio";
 import CC from "./CC";
-//import MonacoEditor from "react-monaco-editor";
+//import MonacoEditor from "react-monaco-editor/lib/editor";
 import yaml from "js-yaml";
 const MonacoEditor = dynamic(
-	() => import("react-monaco-editor"),
+	() => import("react-monaco-editor/lib/editor"),
 	{ ssr: false }
 );
 
