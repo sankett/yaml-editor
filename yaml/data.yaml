@@ -1,0 +1,16 @@
+component:
+  type: 'greeting'
+  className: 'greeting'
+  options:
+    morning:
+      displayName: 'Morning'
+      message: 'Good Morning!'
+    afternoon:
+      displayName: 'Afternoon'
+      message: 'Good Afternoon!'
+    evening:
+      displayName: 'Evening'
+      message: 'Good Evening!'
+    night:
+      displayName: 'Night'
+      message: 'Good Night!'
